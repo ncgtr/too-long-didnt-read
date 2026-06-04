@@ -128,6 +128,18 @@ div {
     animation: none !important;
 }
 
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: "Google Sans", sans-serif;
+    font-size: 11px;
+    color: #888888;
+    margin-left: 10px;
+    padding-bottom: 4px;
+    padding-right: 4px;
+}
+
 @keyframes shine {
     0% {
         background-position: 200% 0%;
