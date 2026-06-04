@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+* {
+    font-family: 'Google Sans', sans-serif;
+    font-size: 16px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 480px;
+    background-color: #0F0F0F;
+}
+
+text {
+    color: #F0F0F0;
+    text-align: center;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+#title-container {
+    margin-left: 20px;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+#title {
+    font-size: 24px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+#subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+    width: 100%;
+    color: #A0A0A0;
+    white-space: nowrap;
+}
+
+#gem-container {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+#gem-icon.gem-animate {
+    width: 24px;
+    height: 24px;
+    animation: spin 3s ease-in-out infinite;
+}
+
+#gem-icon.gem-animate-finished {
+    width: 24px;
+    height: 24px;
+    animation: spin-finish 2s linear forwards;
+}
+
+#gem-title {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+#summary {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+    display: flex;
+    overflow-wrap: break-word;
+}
+
+.shine-animated {
+    display: inline-block !important;
+    background-size: 200% auto !important;
+    background-position: 0% 0%;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+}
+
+.gem-title-shine {
+    background: linear-gradient(
+        120deg, 
+        #707070 30%,
+        #FFFFFF 50%,
+        #707070 70%
+    );
+    animation: shine 15s linear infinite !important;
+}
+
+.summary-shine {
+    background: linear-gradient(
+        120deg, 
+        #C4C4C4 30%,
+        #FFFFFF 50%,
+        #C4C4C4 70%
+    );
+    animation: shine 2.5s linear infinite !important;
+}
+
+.summary-animation-finished {
+    background: linear-gradient(
+        120deg,
+        #FFFFFF 0%,
+        #1F2937 50%,
+        #10B981 75%,
+        #C4C4C4 100%
+    );
+    animation: shine 1s linear infinite !important;
+}
+
+.summary-animation-end {
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+    color: #F0F0F0 !important;
+    animation: none !important;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 200% 0%;
+    }
+    100% {
+        background-position: -200% 0%;
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-finish {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(900deg); }
+    45%  { transform: rotate(1200deg); }
+    62%  { transform: rotate(1320deg); }
+    76%  { transform: rotate(1380deg); }
+    87%  { transform: rotate(1410deg); }
+    94%  { transform: rotate(1428deg); }
+    100% { transform: rotate(1440deg); }
+}

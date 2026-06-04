@@ -1,0 +1,3 @@
+const CONFIG = {
+    GROQ_API_KEY: "gsk_YOUR_API_KEY_HERE",
+}
