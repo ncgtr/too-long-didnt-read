@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Too Long; Didn't Read</title>
     <script src="config.js"></script>
-    <script src="popup.js"></script>
+    <script src="popup.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,12 +14,27 @@
         <text aria-hidden="true" id="title">Too Long; Didn't Read</text>
         <span aria-hidden="true" class="shine-animated gem-title-shine" id="subtitle">Powered by Groq + Llama 3.3</span>
     </div>
+
     <div id="gem-container">
         <img width="20" height="20" src="icon.png" aria-hidden="true" class="gem-animate" id="gem-icon">
         <text id="gem-title">AI Summary</text>
     </div>
-    <text class="shine-animated summary-shine summary-animation-state" id="summary">Summarize...</text>
-    <div class="footer">
-        Created by ncgtr on GitHub
+
+    <text class="shine-animated summary-shine summary-animation-state" id="summary">Summarize... If you see this, something errored!</text>
+
+    <div class="footer-container">
+        <div class="language-container" id="lang-container">
+            <span class="language-flag" id="lang-flag">🇬🇧</span>
+            <select class="language-selector" id="language-selector">
+                <option value="en" data-flag="🇬🇧">English</option>
+                <option value="tr" data-flag="🇹🇷">Türkçe</option>
+                <option value="fr" data-flag="🇫🇷">Français</option>
+                <option value="de" data-flag="🇩🇪">Deutsch</option>
+                <option value="es" data-flag="🇪🇸">Español</option>
+            </select>
+        </div>
+        
+        <span class="watermark-text">Created by ncgtr on GitHub</span>
     </div>
+</body>
 </html>
