@@ -13,7 +13,7 @@
 The prompt for the AI is built following this road:
 1. The content is retrieved from the user's selection or all text in the web page
 2. All bloat such as `< >` or `/ \` characters are removed
-3. A system instruction is set: `"You are a professional summarizer...`
+3. A system instruction is set: `"You are a professional summarizer..."`
 4. And finally, the user instruction is set as the text wanted to be summarized.
 
 Although I implemented available safeguards in the system instructions, the app may still remain susceptible to advanced prompt injection, as no validation is entirely foolproof.
