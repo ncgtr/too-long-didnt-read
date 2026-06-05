@@ -5,8 +5,8 @@
 
 <table>
   <tr>
-    <td><img width="1355" height="745" src="https://github.com/user-attachments/assets/0ac57c83-dedc-4788-b1ac-0a1fcdafce3d"</td>
-    <td><img width="984" height="745" src="https://github.com/user-attachments/assets/b346ea1b-b724-492b-a868-b55b32dbe3a0"</td>
+    <td><img width="1075" height="814" src="https://github.com/user-attachments/assets/b346ea1b-b724-492b-a868-b55b32dbe3a0"</td>
+    <td><img width="1375" height="814" alt="full page" src="https://github.com/user-attachments/assets/01830a00-8283-448e-b147-1e5635333256"</td>
   </tr>
 </table>
 
