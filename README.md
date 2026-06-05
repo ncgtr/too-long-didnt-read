@@ -16,7 +16,7 @@ The prompt for the AI is built following this road:
 3. A system instruction is set: `"You are a professional summarizer...`
 4. And finally, the user instruction is set as the text wanted to be summarized.
 
-As the text is simply passed on, **the app is vulnerable to things such as prompt injection.** Proofing can be added in system instructions.
+Although I implemented available safeguards in the system instructions, the app may still remain susceptible to advanced prompt injection, as no validation is entirely foolproof.
 The inference is also possible with the local **Gemini Nano** model built into Chrome v138+, however I could not implement it as it's region-locked. I suggest you check it out.
 
 ## Setup
